@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70BF245106BAE8474CF6EB7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4533ABB94211891BE6B05C2E /* libPods.a */; };
+		F90A036B1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
+		F90A036C1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
+		F90A036D1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
+		F90A036E1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
+		F90A036F1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
 		F937BC371B6FAC8600A76574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC361B6FAC8600A76574 /* AppDelegate.swift */; };
 		F937BC391B6FAC8600A76574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC381B6FAC8600A76574 /* ViewController.swift */; };
 		F937BC3C1B6FAC8600A76574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3A1B6FAC8600A76574 /* Main.storyboard */; };
@@ -14,6 +20,18 @@
 		F937BC411B6FAC8600A76574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3F1B6FAC8600A76574 /* LaunchScreen.storyboard */; };
 		F937BC4C1B6FAC8700A76574 /* TrialForceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC4B1B6FAC8700A76574 /* TrialForceAppTests.swift */; };
 		F937BC571B6FAC8700A76574 /* TrialForceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC561B6FAC8700A76574 /* TrialForceAppUITests.swift */; };
+		F992A65E1B6FDE05002FA59C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F992A65C1B6FDE05002FA59C /* Interface.storyboard */; };
+		F992A6601B6FDE05002FA59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A65F1B6FDE05002FA59C /* Assets.xcassets */; };
+		F992A6671B6FDE06002FA59C /* isvWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F992A6661B6FDE05002FA59C /* isvWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F992A66E1B6FDE06002FA59C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992A66D1B6FDE06002FA59C /* InterfaceController.swift */; };
+		F992A6701B6FDE06002FA59C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992A66F1B6FDE06002FA59C /* ExtensionDelegate.swift */; };
+		F992A6721B6FDE06002FA59C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992A6711B6FDE06002FA59C /* NotificationController.swift */; };
+		F992A6741B6FDE06002FA59C /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992A6731B6FDE06002FA59C /* GlanceController.swift */; };
+		F992A6761B6FDE06002FA59C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F992A6751B6FDE06002FA59C /* ComplicationController.swift */; };
+		F992A6781B6FDE06002FA59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A6771B6FDE06002FA59C /* Assets.xcassets */; };
+		F992A67C1B6FDE06002FA59C /* isvWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F992A65A1B6FDE05002FA59C /* isvWatch.app */; };
+		F9A237F61B724EFE00F64F22 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A237F51B724EFE00F64F22 /* RootViewController.swift */; };
+		F9DAF2D61B705DEE001AED90 /* TrialTemplateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DAF2D51B705DEE001AED90 /* TrialTemplateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +49,52 @@
 			remoteGlobalIDString = F937BC321B6FAC8600A76574;
 			remoteInfo = TrialForceApp;
 		};
+		F992A6681B6FDE06002FA59C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F937BC2B1B6FAC8600A76574 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F992A6651B6FDE05002FA59C;
+			remoteInfo = "isvWatch Extension";
+		};
+		F992A67A1B6FDE06002FA59C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F937BC2B1B6FAC8600A76574 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F992A6591B6FDE05002FA59C;
+			remoteInfo = isvWatch;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F992A6821B6FDE06002FA59C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F992A6671B6FDE06002FA59C /* isvWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F992A6841B6FDE06002FA59C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F992A67C1B6FDE06002FA59C /* isvWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		312D9C0BFA40DDCB1471C465 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4533ABB94211891BE6B05C2E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEDEC9D36F08A85A41C55B73 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OfficeSpaceLogo.png; path = ../../OfficeSpaceLogo.png; sourceTree = "<group>"; };
 		F937BC331B6FAC8600A76574 /* TrialForceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrialForceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937BC361B6FAC8600A76574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F937BC381B6FAC8600A76574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +108,22 @@
 		F937BC521B6FAC8700A76574 /* TrialForceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrialForceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937BC561B6FAC8700A76574 /* TrialForceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialForceAppUITests.swift; sourceTree = "<group>"; };
 		F937BC581B6FAC8700A76574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F992A65A1B6FDE05002FA59C /* isvWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isvWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F992A65D1B6FDE05002FA59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F992A65F1B6FDE05002FA59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F992A6611B6FDE05002FA59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F992A6661B6FDE05002FA59C /* isvWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "isvWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F992A66C1B6FDE06002FA59C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F992A66D1B6FDE06002FA59C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F992A66F1B6FDE06002FA59C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F992A6711B6FDE06002FA59C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F992A6731B6FDE06002FA59C /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		F992A6751B6FDE06002FA59C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F992A6771B6FDE06002FA59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F992A6791B6FDE06002FA59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A237F51B724EFE00F64F22 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = "../../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"; sourceTree = "<group>"; };
+		F9DAF2D51B705DEE001AED90 /* TrialTemplateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialTemplateHelper.swift; sourceTree = "<group>"; };
+		F9E5C94F1B6FB46500B24ACF /* TrialForceApp-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrialForceApp-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70BF245106BAE8474CF6EB7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +149,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F992A6631B6FDE05002FA59C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186CE53136E7169BC98EE25E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4533ABB94211891BE6B05C2E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F937BC2A1B6FAC8600A76574 = {
 			isa = PBXGroup;
 			children = (
+				F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */,
 				F937BC351B6FAC8600A76574 /* TrialForceApp */,
 				F937BC4A1B6FAC8700A76574 /* TrialForceAppTests */,
 				F937BC551B6FAC8700A76574 /* TrialForceAppUITests */,
+				F992A65B1B6FDE05002FA59C /* isvWatch */,
+				F992A66A1B6FDE06002FA59C /* isvWatch Extension */,
 				F937BC341B6FAC8600A76574 /* Products */,
+				FD60B56DF462564413F4B2EF /* Pods */,
+				186CE53136E7169BC98EE25E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +188,8 @@
 				F937BC331B6FAC8600A76574 /* TrialForceApp.app */,
 				F937BC471B6FAC8700A76574 /* TrialForceAppTests.xctest */,
 				F937BC521B6FAC8700A76574 /* TrialForceAppUITests.xctest */,
+				F992A65A1B6FDE05002FA59C /* isvWatch.app */,
+				F992A6661B6FDE05002FA59C /* isvWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +197,15 @@
 		F937BC351B6FAC8600A76574 /* TrialForceApp */ = {
 			isa = PBXGroup;
 			children = (
+				F9E5C94F1B6FB46500B24ACF /* TrialForceApp-BridgingHeader.h */,
 				F937BC361B6FAC8600A76574 /* AppDelegate.swift */,
 				F937BC381B6FAC8600A76574 /* ViewController.swift */,
+				F9A237F51B724EFE00F64F22 /* RootViewController.swift */,
 				F937BC3A1B6FAC8600A76574 /* Main.storyboard */,
 				F937BC3D1B6FAC8600A76574 /* Assets.xcassets */,
 				F937BC3F1B6FAC8600A76574 /* LaunchScreen.storyboard */,
 				F937BC421B6FAC8600A76574 /* Info.plist */,
+				F9DAF2D51B705DEE001AED90 /* TrialTemplateHelper.swift */,
 			);
 			path = TrialForceApp;
 			sourceTree = "<group>";
@@ -125,6 +228,48 @@
 			path = TrialForceAppUITests;
 			sourceTree = "<group>";
 		};
+		F992A65B1B6FDE05002FA59C /* isvWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F992A65C1B6FDE05002FA59C /* Interface.storyboard */,
+				F992A65F1B6FDE05002FA59C /* Assets.xcassets */,
+				F992A6611B6FDE05002FA59C /* Info.plist */,
+			);
+			path = isvWatch;
+			sourceTree = "<group>";
+		};
+		F992A66A1B6FDE06002FA59C /* isvWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F992A66D1B6FDE06002FA59C /* InterfaceController.swift */,
+				F992A66F1B6FDE06002FA59C /* ExtensionDelegate.swift */,
+				F992A6711B6FDE06002FA59C /* NotificationController.swift */,
+				F992A6731B6FDE06002FA59C /* GlanceController.swift */,
+				F992A6751B6FDE06002FA59C /* ComplicationController.swift */,
+				F992A6771B6FDE06002FA59C /* Assets.xcassets */,
+				F992A6791B6FDE06002FA59C /* Info.plist */,
+				F992A66B1B6FDE06002FA59C /* Supporting Files */,
+			);
+			path = "isvWatch Extension";
+			sourceTree = "<group>";
+		};
+		F992A66B1B6FDE06002FA59C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F992A66C1B6FDE06002FA59C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD60B56DF462564413F4B2EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEDEC9D36F08A85A41C55B73 /* Pods.debug.xcconfig */,
+				312D9C0BFA40DDCB1471C465 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +277,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F937BC5B1B6FAC8700A76574 /* Build configuration list for PBXNativeTarget "TrialForceApp" */;
 			buildPhases = (
+				D5403469D56053263A6540D7 /* Check Pods Manifest.lock */,
 				F937BC2F1B6FAC8600A76574 /* Sources */,
 				F937BC301B6FAC8600A76574 /* Frameworks */,
 				F937BC311B6FAC8600A76574 /* Resources */,
+				00E84F810BF8FC8649157E86 /* Copy Pods Resources */,
+				F992A6841B6FDE06002FA59C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F992A67B1B6FDE06002FA59C /* PBXTargetDependency */,
 			);
 			name = TrialForceApp;
 			productName = TrialForceApp;
@@ -181,6 +330,40 @@
 			productReference = F937BC521B6FAC8700A76574 /* TrialForceAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F992A6591B6FDE05002FA59C /* isvWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F992A6831B6FDE06002FA59C /* Build configuration list for PBXNativeTarget "isvWatch" */;
+			buildPhases = (
+				F992A6581B6FDE05002FA59C /* Resources */,
+				F992A6821B6FDE06002FA59C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F992A6691B6FDE06002FA59C /* PBXTargetDependency */,
+			);
+			name = isvWatch;
+			productName = isvWatch;
+			productReference = F992A65A1B6FDE05002FA59C /* isvWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F992A6651B6FDE05002FA59C /* isvWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F992A6811B6FDE06002FA59C /* Build configuration list for PBXNativeTarget "isvWatch Extension" */;
+			buildPhases = (
+				F992A6621B6FDE05002FA59C /* Sources */,
+				F992A6631B6FDE05002FA59C /* Frameworks */,
+				F992A6641B6FDE05002FA59C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "isvWatch Extension";
+			productName = "isvWatch Extension";
+			productReference = F992A6661B6FDE05002FA59C /* isvWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +384,12 @@
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = F937BC321B6FAC8600A76574;
 					};
+					F992A6591B6FDE05002FA59C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F992A6651B6FDE05002FA59C = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = F937BC2E1B6FAC8600A76574 /* Build configuration list for PBXProject "TrialForceApp" */;
@@ -219,6 +408,8 @@
 				F937BC321B6FAC8600A76574 /* TrialForceApp */,
 				F937BC461B6FAC8700A76574 /* TrialForceAppTests */,
 				F937BC511B6FAC8700A76574 /* TrialForceAppUITests */,
+				F992A6591B6FDE05002FA59C /* isvWatch */,
+				F992A6651B6FDE05002FA59C /* isvWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +422,7 @@
 				F937BC411B6FAC8600A76574 /* LaunchScreen.storyboard in Resources */,
 				F937BC3E1B6FAC8600A76574 /* Assets.xcassets in Resources */,
 				F937BC3C1B6FAC8600A76574 /* Main.storyboard in Resources */,
+				F90A036B1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90A036C1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,17 +438,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90A036D1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F992A6581B6FDE05002FA59C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F992A6601B6FDE05002FA59C /* Assets.xcassets in Resources */,
+				F90A036E1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
+				F992A65E1B6FDE05002FA59C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F992A6641B6FDE05002FA59C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F992A6781B6FDE06002FA59C /* Assets.xcassets in Resources */,
+				F90A036F1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E84F810BF8FC8649157E86 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5403469D56053263A6540D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F937BC2F1B6FAC8600A76574 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DAF2D61B705DEE001AED90 /* TrialTemplateHelper.swift in Sources */,
 				F937BC391B6FAC8600A76574 /* ViewController.swift in Sources */,
+				F9A237F61B724EFE00F64F22 /* RootViewController.swift in Sources */,
 				F937BC371B6FAC8600A76574 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +524,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F992A6621B6FDE05002FA59C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F992A6721B6FDE06002FA59C /* NotificationController.swift in Sources */,
+				F992A6701B6FDE06002FA59C /* ExtensionDelegate.swift in Sources */,
+				F992A6761B6FDE06002FA59C /* ComplicationController.swift in Sources */,
+				F992A66E1B6FDE06002FA59C /* InterfaceController.swift in Sources */,
+				F992A6741B6FDE06002FA59C /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +548,16 @@
 			isa = PBXTargetDependency;
 			target = F937BC321B6FAC8600A76574 /* TrialForceApp */;
 			targetProxy = F937BC531B6FAC8700A76574 /* PBXContainerItemProxy */;
+		};
+		F992A6691B6FDE06002FA59C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F992A6651B6FDE05002FA59C /* isvWatch Extension */;
+			targetProxy = F992A6681B6FDE06002FA59C /* PBXContainerItemProxy */;
+		};
+		F992A67B1B6FDE06002FA59C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F992A6591B6FDE05002FA59C /* isvWatch */;
+			targetProxy = F992A67A1B6FDE06002FA59C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -306,6 +576,14 @@
 				F937BC401B6FAC8600A76574 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F992A65C1B6FDE05002FA59C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F992A65D1B6FDE05002FA59C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,6 +629,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TrialForceApp/TrialForceApp-BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +668,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TrialForceApp/TrialForceApp-BridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -396,6 +677,7 @@
 		};
 		F937BC5C1B6FAC8700A76574 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEDEC9D36F08A85A41C55B73 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrialForceApp/Info.plist;
@@ -407,6 +689,7 @@
 		};
 		F937BC5D1B6FAC8700A76574 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 312D9C0BFA40DDCB1471C465 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrialForceApp/Info.plist;
@@ -464,6 +747,70 @@
 			};
 			name = Release;
 		};
+		F992A67D1B6FDE06002FA59C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = isvWatch_Extension;
+				INFOPLIST_FILE = isvWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		F992A67E1B6FDE06002FA59C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = isvWatch_Extension;
+				INFOPLIST_FILE = isvWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		F992A67F1B6FDE06002FA59C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "isvWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		F992A6801B6FDE06002FA59C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "isvWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +830,7 @@
 				F937BC5D1B6FAC8700A76574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F937BC5E1B6FAC8700A76574 /* Build configuration list for PBXNativeTarget "TrialForceAppTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +839,7 @@
 				F937BC601B6FAC8700A76574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F937BC611B6FAC8700A76574 /* Build configuration list for PBXNativeTarget "TrialForceAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +848,25 @@
 				F937BC631B6FAC8700A76574 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F992A6811B6FDE06002FA59C /* Build configuration list for PBXNativeTarget "isvWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F992A67F1B6FDE06002FA59C /* Debug */,
+				F992A6801B6FDE06002FA59C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F992A6831B6FDE06002FA59C /* Build configuration list for PBXNativeTarget "isvWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F992A67D1B6FDE06002FA59C /* Debug */,
+				F992A67E1B6FDE06002FA59C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,14 @@
 //
 
 import UIKit
+import CoreData
+import WatchKit
+
+
+let RemoteAccessConsumerKey = "3MVG9SemV5D80oBe_O4cXHa0F85ctJlhkGNgZ391bE83Mq_te1MRcH.EviORrHIGlOQw48YscpsQPEgs.AAF9";
+let OAuthRedirectURI = "testsfdc://oauth/success";
+let scopes = ["api"];
+let templtHelper: TrialTemplateHelper = TrialTemplateHelper()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        SalesforceSDKManager.sharedManager().launch()
         return true
     }
 
@@ -40,6 +49,74 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    // MARK: - Salesforce Auth Stuff
+    
+    override
+    init()
+    {
+        super.init()
+        
+        
+        //let appGroupID = "group.com.gyspycode.SFTasks"
+        //let defaults = NSUserDefaults(suiteName: appGroupID)
+        
+        
+        SFLogger.setLogLevel(SFLogLevelDebug)
+        
+        // TEST
+        //SFAuthenticationManager.sharedManager().logout()
+        
+        SalesforceSDKManager.sharedManager().connectedAppId = RemoteAccessConsumerKey
+        SalesforceSDKManager.sharedManager().connectedAppCallbackUri = OAuthRedirectURI
+        SalesforceSDKManager.sharedManager().authScopes = scopes
+        SalesforceSDKManager.sharedManager().postLaunchAction = {
+            [unowned self] (launchActionList: SFSDKLaunchAction) in
+            let launchActionString = SalesforceSDKManager.launchActionsStringRepresentation(launchActionList)
+            self.log(SFLogLevelInfo, msg:"Post-launch: launch actions taken: \(launchActionString)");
+            self.setupRootViewController();
+        }
+        SalesforceSDKManager.sharedManager().launchErrorAction = {
+            [unowned self] (error: NSError?, launchActionList: SFSDKLaunchAction) in
+            if let actualError = error {
+                self.log(SFLogLevelError, msg:"Error during SDK launch: \(actualError.localizedDescription)")
+            } else {
+                self.log(SFLogLevelError, msg:"Unknown error during SDK launch.")
+            }
+            //  self.initializeAppViewState()
+            // SalesforceSDKManager.sharedManager().launch()
+        }
+        SalesforceSDKManager.sharedManager().postLogoutAction = {
+            [unowned self] in
+            self.handleSdkManagerLogout()
+        }
+        SalesforceSDKManager.sharedManager().switchUserAction = {
+            [unowned self] (fromUser: SFUserAccount?, toUser: SFUserAccount?) -> () in
+            self.handleUserSwitch(fromUser, toUser: toUser)
+        }
+        
+        
+        
+        templtHelper.register()
+    }
+    
+    func handleSdkManagerLogout()
+    {
+        //todo
+    }
+    
+    func handleUserSwitch(fromUser: SFUserAccount?, toUser: SFUserAccount?)
+    {
+        //todo
+    }
+
+    func setupRootViewController()
+    {
+        let rootVC = RootViewController(nibName: nil, bundle: nil)
+        let navVC = UINavigationController(rootViewController: rootVC)
+        self.window!.rootViewController = navVC
+    }
+
 
 
 }

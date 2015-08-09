@@ -4,10 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication - isvWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>Glance - isvWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Notification - isvWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>TrialForceApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>isvWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -23,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>F937BC511B6FAC8700A76574</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F992A6591B6FDE05002FA59C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
