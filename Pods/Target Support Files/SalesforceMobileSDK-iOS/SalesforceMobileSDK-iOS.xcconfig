@@ -1,0 +1,4 @@
+SALESFORCEMOBILESDK_IOS_HEADER_SEARCH_PATHS = ${PODS_ROOT}/Headers/Public/SalesforceMobileSDK-iOS/Headers
+SALESFORCEMOBILESDK_IOS_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/SalesforceMobileSDK-iOS/external/ThirdPartyDependencies/SalesforceCommonUtils"
+SALESFORCEMOBILESDK_IOS_OTHER_CFLAGS = -DSQLITE_HAS_CODEC -DFMDatabase=SF_FMDatabase -DFMStatement=SF_FMStatement -DFMDatabasePool=SF_FMDatabasePool -DFMDatabaseQueue=SF_FMDatabaseQueue -DFMResultSet=SF_FMResultSet -DFMDBBlockSQLiteCallBackFunction=SF_FMDBBlockSQLiteCallBackFunction
+SALESFORCEMOBILESDK_IOS_OTHER_LDFLAGS = -l"SalesforceCommonUtils" -l"z" -framework "MessageUI" -framework "MobileCoreServices"
