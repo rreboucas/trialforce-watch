@@ -42,6 +42,32 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
             print("applicationData =  \(applicationData)")
             
             
+            let defaults = NSUserDefaults.standardUserDefaults()
+            if let savedTemplates = defaults.dataForKey("trialTemplates")
+            {
+                // Unarchive NSData
+                phData = NSKeyedUnarchiver.unarchiveObjectWithData(savedTemplates) as AnyObject?
+                print("phData =  \(phData)")
+                let objct = phData as! NSDictionary
+                let dicts:NSArray = objct["results"] as!NSArray
+                
+                // Set Picker Items on Scene with new list of options
+                var pickerItems: [WKPickerItem] = []
+                for dict in dicts {
+                    var tmpName = dict["Name"] as! String
+                    //var templateID = dict["lc_trialforce__Trialforce_Template_ID__c"] as! String
+                    print("didReceiveApplicationContext: tmpName = \(tmpName)")
+                    let item = WKPickerItem()
+                    item.title = tmpName as! String
+                    pickerItems.append(item)
+                }
+                self.trialPicker.setItems(pickerItems)
+            }
+            //let dicts = defaults.stringForKey("trialTemplates") as!NSArray
+       
+
+            
+            
             /*
             if (WCSession.defaultSession().reachable) {
                 session.sendMessage(applicationData, replyHandler: { replyDict in
@@ -109,22 +135,30 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]){
         print("Controller didReceiveApplicationContext =  \(applicationContext)")
         let receivedNSData:NSData = (applicationContext["results"] as? NSData)!
+        
+        // Save NSData to NSUserDefaults local storage
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(receivedNSData, forKey: "trialTemplates")
+        
+        // Unarchive NSData
         phData = NSKeyedUnarchiver.unarchiveObjectWithData(receivedNSData) as AnyObject?
         print("phData =  \(phData)")
         let objct = phData as! NSDictionary
-        
-        
         let dicts:NSArray = objct["results"] as!NSArray
         
+        // Set Picker Items on Scene with new list of options
         var pickerItems: [WKPickerItem] = []
         for dict in dicts {
-            var tmpName = dict["Name"]
-            print("tmpName = \(tmpName)")
+            var tmpName = dict["Name"] as! String
+            //var templateID = dict["lc_trialforce__Trialforce_Template_ID__c"] as! String
+            print("didReceiveApplicationContext: tmpName = \(tmpName)")
             let item = WKPickerItem()
             item.title = tmpName as! String
             pickerItems.append(item)
         }
         self.trialPicker.setItems(pickerItems)
+        
+        
         
         //context = phData
     }
