@@ -49,44 +49,10 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
                 phData = NSKeyedUnarchiver.unarchiveObjectWithData(savedTemplates) as AnyObject?
                 print("phData =  \(phData)")
                 let objct = phData as! NSDictionary
-                let dicts:NSArray = objct["results"] as!NSArray
+                loadPickerData(objct)
                 
-                // Set Picker Items on Scene with new list of options
-                var pickerItems: [WKPickerItem] = []
-                for dict in dicts {
-                    var tmpName = dict["Name"] as! String
-                    //var templateID = dict["lc_trialforce__Trialforce_Template_ID__c"] as! String
-                    print("didReceiveApplicationContext: tmpName = \(tmpName)")
-                    let item = WKPickerItem()
-                    item.title = tmpName as! String
-                    pickerItems.append(item)
-                }
-                self.trialPicker.setItems(pickerItems)
             }
-            //let dicts = defaults.stringForKey("trialTemplates") as!NSArray
-       
-
-            
-            
-            /*
-            if (WCSession.defaultSession().reachable) {
-                session.sendMessage(applicationData, replyHandler: { replyDict in
-                    }, errorHandler: { error in
-                })
-                
-                session.sendMessage(applicationData, replyHandler: { reply in
-                    //handle iphone response here
-                    if(reply["success"] != nil) {
-                        print("got here")
-                        let a:AnyObject = reply["success"] as! NSDictionary
-                        self.loadPickerData(a as! NSDictionary)
-                    }
-                    
-                    }, errorHandler: {(NSError error) -> Void in
-                        // catch any errors here
-                        print(error)
-                })*/
-            }
+        }
             
         }
         
@@ -103,24 +69,25 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
         self.trialPicker.setItems(pickerItems)
 
     }
+
+*/
     
-    private func loadPickerData(results: NSDictionary) {
-        //results come in 3 elements* "done"(bool), "totalSize"(nsnumber), and "records"(NSArray)
+    private func loadPickerData(objct: NSDictionary) {
+        let dicts:NSArray = objct["results"] as!NSArray
         
-        let records:NSArray = results["records"] as! NSArray
+        // Set Picker Items on Scene with new list of options
         var pickerItems: [WKPickerItem] = []
-        
-        for (index, record) in records.enumerate() {
-            //let row = optyTable.rowControllerAtIndex(index) as! OpportunityRowController
+        for dict in dicts {
+            var tmpName = dict["Name"] as! String
+            //var templateID = dict["lc_trialforce__Trialforce_Template_ID__c"] as! String
+            print("didReceiveApplicationContext: tmpName = \(tmpName)")
             let item = WKPickerItem()
-            let s: NSDictionary = record as! NSDictionary
-            
-            item.title = s["Name"] as? String
+            item.title = tmpName as! String
             pickerItems.append(item)
         }
         self.trialPicker.setItems(pickerItems)
     }
-*/
+
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
@@ -144,23 +111,9 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
         phData = NSKeyedUnarchiver.unarchiveObjectWithData(receivedNSData) as AnyObject?
         print("phData =  \(phData)")
         let objct = phData as! NSDictionary
-        let dicts:NSArray = objct["results"] as!NSArray
+        loadPickerData(objct)
         
-        // Set Picker Items on Scene with new list of options
-        var pickerItems: [WKPickerItem] = []
-        for dict in dicts {
-            var tmpName = dict["Name"] as! String
-            //var templateID = dict["lc_trialforce__Trialforce_Template_ID__c"] as! String
-            print("didReceiveApplicationContext: tmpName = \(tmpName)")
-            let item = WKPickerItem()
-            item.title = tmpName as! String
-            pickerItems.append(item)
-        }
-        self.trialPicker.setItems(pickerItems)
-        
-        
-        
-        //context = phData
+
     }
     
 
