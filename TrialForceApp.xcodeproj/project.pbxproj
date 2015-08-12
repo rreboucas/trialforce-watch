@@ -20,6 +20,7 @@
 		F937BC411B6FAC8600A76574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3F1B6FAC8600A76574 /* LaunchScreen.storyboard */; };
 		F937BC4C1B6FAC8700A76574 /* TrialForceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC4B1B6FAC8700A76574 /* TrialForceAppTests.swift */; };
 		F937BC571B6FAC8700A76574 /* TrialForceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC561B6FAC8700A76574 /* TrialForceAppUITests.swift */; };
+		F94D59AE1B791D90000DCF99 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D59AD1B791D90000DCF99 /* SecondController.swift */; };
 		F992A65E1B6FDE05002FA59C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F992A65C1B6FDE05002FA59C /* Interface.storyboard */; };
 		F992A6601B6FDE05002FA59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A65F1B6FDE05002FA59C /* Assets.xcassets */; };
 		F992A6671B6FDE06002FA59C /* isvWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F992A6661B6FDE05002FA59C /* isvWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -108,6 +109,9 @@
 		F937BC521B6FAC8700A76574 /* TrialForceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrialForceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937BC561B6FAC8700A76574 /* TrialForceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialForceAppUITests.swift; sourceTree = "<group>"; };
 		F937BC581B6FAC8700A76574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94D59AA1B78D950000DCF99 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		F94D59AC1B791D8F000DCF99 /* isvWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "isvWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		F94D59AD1B791D90000DCF99 /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondController.swift; path = ../isvWatch/SecondController.swift; sourceTree = "<group>"; };
 		F992A65A1B6FDE05002FA59C /* isvWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isvWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F992A65D1B6FDE05002FA59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		F992A65F1B6FDE05002FA59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 		186CE53136E7169BC98EE25E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F94D59AA1B78D950000DCF99 /* EventKit.framework */,
 				4533ABB94211891BE6B05C2E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -234,6 +239,7 @@
 				F992A65C1B6FDE05002FA59C /* Interface.storyboard */,
 				F992A65F1B6FDE05002FA59C /* Assets.xcassets */,
 				F992A6611B6FDE05002FA59C /* Info.plist */,
+				F94D59AC1B791D8F000DCF99 /* isvWatch-Bridging-Header.h */,
 			);
 			path = isvWatch;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 		F992A66A1B6FDE06002FA59C /* isvWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F94D59AD1B791D90000DCF99 /* SecondController.swift */,
 				F992A66D1B6FDE06002FA59C /* InterfaceController.swift */,
 				F992A66F1B6FDE06002FA59C /* ExtensionDelegate.swift */,
 				F992A6711B6FDE06002FA59C /* NotificationController.swift */,
@@ -370,6 +377,7 @@
 		F937BC2B1B6FAC8600A76574 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Salesforce Inc.";
 				TargetAttributes = {
@@ -389,6 +397,7 @@
 					};
 					F992A6651B6FDE05002FA59C = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 896XAXFA4H;
 					};
 				};
 			};
@@ -531,6 +540,7 @@
 				F992A6721B6FDE06002FA59C /* NotificationController.swift in Sources */,
 				F992A6701B6FDE06002FA59C /* ExtensionDelegate.swift in Sources */,
 				F992A6761B6FDE06002FA59C /* ComplicationController.swift in Sources */,
+				F94D59AE1B791D90000DCF99 /* SecondController.swift in Sources */,
 				F992A66E1B6FDE06002FA59C /* InterfaceController.swift in Sources */,
 				F992A6741B6FDE06002FA59C /* GlanceController.swift in Sources */,
 			);
@@ -626,6 +636,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -666,6 +677,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "TrialForceApp/TrialForceApp-BridgingHeader.h";
@@ -680,6 +692,7 @@
 			baseConfigurationReference = DEDEC9D36F08A85A41C55B73 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TrialForceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp;
@@ -692,6 +705,7 @@
 			baseConfigurationReference = 312D9C0BFA40DDCB1471C465 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TrialForceApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp;
@@ -751,13 +765,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = isvWatch_Extension;
 				INFOPLIST_FILE = isvWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "isvWatch/isvWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -767,13 +785,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = isvWatch_Extension;
 				INFOPLIST_FILE = isvWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "isvWatch/isvWatch-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -783,6 +804,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "isvWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp.watchkitextension;
@@ -799,6 +822,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "isvWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.TrialForceApp.watchkitapp.watchkitextension;

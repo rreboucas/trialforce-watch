@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 import WatchConnectivity
+import UIKit
 
 var  controlleReceivedData: NSData = NSData()
 
@@ -17,10 +18,37 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
     var session : WCSession!
     var context = [String: AnyObject]()
     var phData: AnyObject?
+    var dicts:NSArray = []
+    var selectedTemplateIndex:Int = 0
+    
     // comment
     //new
 
     @IBOutlet var trialPicker: WKInterfacePicker!
+    
+    @IBAction func Picker_Tapped(value: Int) {
+        print("Printer tapped")
+        print("Value selected = \(value)")
+        selectedTemplateIndex = value
+    }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String) ->
+        AnyObject? {
+            
+            var dataToSend = dicts[selectedTemplateIndex] as! NSDictionary
+            var tmpName = dataToSend["Name"] as! String
+            var tmpId = dataToSend["lc_trialforce__Trialforce_Template_ID__c"] as! String
+            var chosenTemplate = ["Name": tmpName, "templateId": tmpId]
+
+            
+            if segueIdentifier == "hierarchical" {
+                return ["tempName": tmpName,
+                "tempId":tmpId]
+            }
+            else {
+                return ["segue": "", "data": ""]
+            }
+    }
     
     override func awakeWithContext(context: AnyObject?) {
         
@@ -73,7 +101,7 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
 */
     
     private func loadPickerData(objct: NSDictionary) {
-        let dicts:NSArray = objct["results"] as!NSArray
+        dicts = objct["results"] as!NSArray
         
         // Set Picker Items on Scene with new list of options
         var pickerItems: [WKPickerItem] = []
@@ -88,6 +116,13 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
         self.trialPicker.setItems(pickerItems)
     }
 
+    @IBAction func TrialPicker_Selected(value: Int) {
+        
+        print("Value selected = \(value)")
+        print("dicts = \(dicts)")
+        
+    }
+    
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
