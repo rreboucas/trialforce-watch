@@ -43,6 +43,7 @@
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Next" id="fX0-9P-ndZ">
                             <connections>
                                 <action selector="Event_Tapped" destination="SlV-u6-TG8" id="fE5-u8-VFh"/>
+                                <segue destination="Bhq-Zo-tmv" kind="push" identifier="hierarchical" id="Kpj-Tk-i9b"/>
                             </connections>
                         </button>
                         <picker width="1" height="83" alignment="center" verticalAlignment="center" id="Gjn-Yy-CUU">
@@ -57,6 +58,30 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="436" y="347"/>
+        </scene>
+        <!--Third Interface Controller-->
+        <scene sceneID="lHS-ZU-9Sb">
+            <objects>
+                <controller hidesWhenLoading="NO" id="Bhq-Zo-tmv" customClass="ThirdInterfaceController" customModule="isvWatch_Extension">
+                    <items>
+                        <label alignment="center" text="Pick a Contact:" textAlignment="left" id="cyU-tV-dhW"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Create Trial" id="l3O-j7-Kyp">
+                            <connections>
+                                <action selector="Btn_Create_Trial" destination="Bhq-Zo-tmv" id="RH5-ph-lIP"/>
+                            </connections>
+                        </button>
+                        <picker width="1" height="83" alignment="center" verticalAlignment="center" id="SrK-CE-GDP">
+                            <connections>
+                                <action selector="Picker_Tapped:" destination="Bhq-Zo-tmv" id="Nxp-Tp-85E"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="Contact_Picker" destination="SrK-CE-GDP" id="RN0-rw-6oW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="634" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

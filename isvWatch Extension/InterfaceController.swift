@@ -36,14 +36,19 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
         AnyObject? {
             
             var dataToSend = dicts[selectedTemplateIndex] as! NSDictionary
-            var tmpName = dataToSend["Name"] as! String
-            var tmpId = dataToSend["lc_trialforce__Trialforce_Template_ID__c"] as! String
-            var chosenTemplate = ["Name": tmpName, "templateId": tmpId]
+            
+            var tmpName = dataToSend["Name"] as? String
+            var tmpId = dataToSend["lc_trialforce__Trialforce_Template_ID__c"] as? String
+            var cbUrl = dataToSend["lc_trialforce__Connected_App_Callback_URL__c"] as? String
+            var emailSup = dataToSend["lc_trialforce__Signup_Email_Suppressed__c"] as? Bool
+            var consKey = dataToSend["lc_trialforce__Connected_App_Consumer_Key__c"] as? String
+            var subdomain = dataToSend["lc_trialforce__Subdomain__c"] as? String
 
+            var trial = Trial(templateName: tmpName, trialTemplateID: tmpId, connectedAppCallBackURL: cbUrl, signupEmailSuppressed: emailSup, connectedAppConsummerKey: consKey, subdomain: subdomain)
             
             if segueIdentifier == "hierarchical" {
-                return ["tempName": tmpName,
-                "tempId":tmpId]
+                return trial
+                //return ["tempName": tmpName, "tempId":tmpId]
             }
             else {
                 return ["segue": "", "data": ""]

@@ -21,6 +21,7 @@
 		F937BC4C1B6FAC8700A76574 /* TrialForceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC4B1B6FAC8700A76574 /* TrialForceAppTests.swift */; };
 		F937BC571B6FAC8700A76574 /* TrialForceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC561B6FAC8700A76574 /* TrialForceAppUITests.swift */; };
 		F94D59AE1B791D90000DCF99 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D59AD1B791D90000DCF99 /* SecondController.swift */; };
+		F97F4EF81B7B94510087AA5E /* ThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F4EF71B7B94510087AA5E /* ThirdController.swift */; };
 		F992A65E1B6FDE05002FA59C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F992A65C1B6FDE05002FA59C /* Interface.storyboard */; };
 		F992A6601B6FDE05002FA59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A65F1B6FDE05002FA59C /* Assets.xcassets */; };
 		F992A6671B6FDE06002FA59C /* isvWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F992A6661B6FDE05002FA59C /* isvWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -33,6 +34,7 @@
 		F992A67C1B6FDE06002FA59C /* isvWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F992A65A1B6FDE05002FA59C /* isvWatch.app */; };
 		F9A237F61B724EFE00F64F22 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A237F51B724EFE00F64F22 /* RootViewController.swift */; };
 		F9DAF2D61B705DEE001AED90 /* TrialTemplateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DAF2D51B705DEE001AED90 /* TrialTemplateHelper.swift */; };
+		F9E308EB1B7BC0B2005A979E /* Trial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E308EA1B7BC0B2005A979E /* Trial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,7 @@
 		F94D59AA1B78D950000DCF99 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
 		F94D59AC1B791D8F000DCF99 /* isvWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "isvWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		F94D59AD1B791D90000DCF99 /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondController.swift; path = ../isvWatch/SecondController.swift; sourceTree = "<group>"; };
+		F97F4EF71B7B94510087AA5E /* ThirdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdController.swift; sourceTree = "<group>"; };
 		F992A65A1B6FDE05002FA59C /* isvWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isvWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F992A65D1B6FDE05002FA59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		F992A65F1B6FDE05002FA59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 		F992A6791B6FDE06002FA59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9A237F51B724EFE00F64F22 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = "../../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"; sourceTree = "<group>"; };
 		F9DAF2D51B705DEE001AED90 /* TrialTemplateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialTemplateHelper.swift; sourceTree = "<group>"; };
+		F9E308EA1B7BC0B2005A979E /* Trial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trial.swift; sourceTree = "<group>"; };
 		F9E5C94F1B6FB46500B24ACF /* TrialForceApp-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrialForceApp-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -247,6 +251,8 @@
 		F992A66A1B6FDE06002FA59C /* isvWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F9E308EA1B7BC0B2005A979E /* Trial.swift */,
+				F97F4EF71B7B94510087AA5E /* ThirdController.swift */,
 				F94D59AD1B791D90000DCF99 /* SecondController.swift */,
 				F992A66D1B6FDE06002FA59C /* InterfaceController.swift */,
 				F992A66F1B6FDE06002FA59C /* ExtensionDelegate.swift */,
@@ -538,6 +544,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F992A6721B6FDE06002FA59C /* NotificationController.swift in Sources */,
+				F97F4EF81B7B94510087AA5E /* ThirdController.swift in Sources */,
+				F9E308EB1B7BC0B2005A979E /* Trial.swift in Sources */,
 				F992A6701B6FDE06002FA59C /* ExtensionDelegate.swift in Sources */,
 				F992A6761B6FDE06002FA59C /* ComplicationController.swift in Sources */,
 				F94D59AE1B791D90000DCF99 /* SecondController.swift in Sources */,

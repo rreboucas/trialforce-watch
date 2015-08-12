@@ -15,6 +15,7 @@ class SecondInterfaceController:  WKInterfaceController {
 
     var eventsList: [EKEvent] = []
     var selectedEventIndex:Int = 0
+    var trialReceived:Trial?
     
     @IBOutlet var eventPicker: WKInterfacePicker!
     
@@ -31,17 +32,23 @@ class SecondInterfaceController:  WKInterfaceController {
             
             var eventToSend = eventsList[selectedEventIndex]
             var eventAttendees = eventToSend.attendees as [EKParticipant]?
-            var dictToSend = [String: String]()
+            
+            
+            trialReceived?.attendees = eventAttendees
+            
+            //var dictToSend = [String: String]()
             
             //Loop through the collection of partipants to form the dictionary object to send to the new View
             
-            for eventAttendee in eventAttendees! {
+            /*for eventAttendee in eventAttendees! {
+                dictToSend["test"] = "Rodrigo"
                 dictToSend[eventAttendee.name!] = eventAttendee.URL.resourceSpecifier
             }
-            
+            */
             
             if segueIdentifier == "hierarchical" {
-                return [dictToSend]
+                return trialReceived
+                //return eventAttendees
             }
             else {
                 return ["segue": "", "data": ""]
@@ -52,8 +59,10 @@ class SecondInterfaceController:  WKInterfaceController {
         
         super.awakeWithContext(context)
         
-        var templateName = (context as! NSDictionary)["tempName"] as? String
-        var templateId = (context as! NSDictionary)["tempId"] as? String
+        trialReceived = context as! Trial
+        
+        //var templateName = (context as! NSDictionary)["tempName"] as? String
+        //var templateId = (context as! NSDictionary)["tempId"] as? String
         
         
          //Working with EventKit
