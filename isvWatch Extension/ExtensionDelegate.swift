@@ -34,7 +34,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         
         //
         
-        print("didReceiveApplicationContext =  \(applicationContext)")
+        print("Extension Delegate: didReceiveApplicationContext =  \(applicationContext)")
         iphoneData = applicationContext
     }
 
