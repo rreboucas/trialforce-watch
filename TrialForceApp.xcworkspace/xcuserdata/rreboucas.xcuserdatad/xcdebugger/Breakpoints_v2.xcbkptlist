@@ -225,6 +225,38 @@
             endingLineNumber = "66"
             landmarkName = "-authManagerDidStartAuthWebViewLoad:"
             landmarkType = "4">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SFAuthenticationManager statusAlert]"
+                  moduleName = "TrialForceApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rreboucas/Documents/Xcode_Projects/TrialForceApp/Pods/SalesforceMobileSDK-iOS/libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Security/SFAuthenticationManager.h"
+                  timestampString = "461203812.962774"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SFAuthenticationManager setStatusAlert:]"
+                  moduleName = "TrialForceApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rreboucas/Documents/Xcode_Projects/TrialForceApp/Pods/SalesforceMobileSDK-iOS/libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Security/SFAuthenticationManager.h"
+                  timestampString = "461203812.963065"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -346,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460584314.5536"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "numberOfSectionsInTableView(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -362,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460584314.5536"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "downloadThumbnail(_:completeBlock:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -378,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460584314.5536"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
             landmarkName = "downloadThumbnail(_:completeBlock:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -394,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460502630.565088"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "request(_:didLoadResponse:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -410,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460490068.538153"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -426,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460490068.538153"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "loadView()"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460520379.863681"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "request(_:didLoadResponse:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -458,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460584314.5536"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460520379.863681"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "request(_:didLoadResponse:)"
             landmarkType = "5">
             <Locations>
@@ -522,11 +554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460520612.865332"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "request(_:didLoadResponse:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -538,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460576762.417669"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "request(_:didLoadResponse:)"
             landmarkType = "5">
             <Locations>
@@ -586,39 +618,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460577768.05264"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "request(_:didLoadResponse:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460584314.5536"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "request(_:didLoadResponse:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460581652.259516"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"
@@ -634,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460581727.0901"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "request(_:didLoadResponse:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -650,11 +650,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
-            timestampString = "460584309.592294"
+            timestampString = "461191788.848949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "request(_:didLoadResponse:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
+            timestampString = "461191788.848949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
             endingLineNumber = "150"
+            landmarkName = "request(_:didLoadResponse:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
+            timestampString = "461191788.848949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "request(_:didLoadResponse:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -922,11 +954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "isvWatch Extension/ThirdController.swift"
-            timestampString = "461104954.789697"
+            timestampString = "461121291.898572"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "awakeWithContext(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1027,16 +1059,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "isvWatch Extension/ThirdController.swift"
-            timestampString = "461105684.262701"
+            filePath = "isvWatch Extension/MeterController.swift"
+            timestampString = "461189684.339585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "Btn_Create_Trial()"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "willActivate()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "isvWatch Extension/MeterController.swift"
+            timestampString = "461191453.499393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "awakeWithContext(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "isvWatch Extension/MeterController.swift"
+            timestampString = "461189684.339585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "willActivate()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1046,13 +1110,109 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "isvWatch Extension/ThirdController.swift"
-            timestampString = "461104984.787261"
+            filePath = "isvWatch Extension/MeterController.swift"
+            timestampString = "461191453.499393"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "Btn_Create_Trial()"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "awakeWithContext(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrialForceApp/AppDelegate.swift"
+            timestampString = "461191619.747065"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
+            timestampString = "461198911.382817"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
+            timestampString = "461191766.377704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
+            timestampString = "461201964.938829"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "270"
+            endingLineNumber = "270"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
+            timestampString = "461203138.497549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"
+            timestampString = "461203741.648949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

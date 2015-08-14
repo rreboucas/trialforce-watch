@@ -35,6 +35,7 @@
 		F9A237F61B724EFE00F64F22 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A237F51B724EFE00F64F22 /* RootViewController.swift */; };
 		F9DAF2D61B705DEE001AED90 /* TrialTemplateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DAF2D51B705DEE001AED90 /* TrialTemplateHelper.swift */; };
 		F9E308EB1B7BC0B2005A979E /* Trial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E308EA1B7BC0B2005A979E /* Trial.swift */; };
+		F9E308ED1B7BEDBB005A979E /* MeterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E308EC1B7BEDBB005A979E /* MeterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		F9A237F51B724EFE00F64F22 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = "../../../../Downloads/SalesforceMobileSDK-iOS-master/native/SampleApps/FileExplorer/FileExplorer/Classes/RootViewController.swift"; sourceTree = "<group>"; };
 		F9DAF2D51B705DEE001AED90 /* TrialTemplateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialTemplateHelper.swift; sourceTree = "<group>"; };
 		F9E308EA1B7BC0B2005A979E /* Trial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trial.swift; sourceTree = "<group>"; };
+		F9E308EC1B7BEDBB005A979E /* MeterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterController.swift; sourceTree = "<group>"; };
 		F9E5C94F1B6FB46500B24ACF /* TrialForceApp-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TrialForceApp-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				F9E308EA1B7BC0B2005A979E /* Trial.swift */,
+				F9E308EC1B7BEDBB005A979E /* MeterController.swift */,
 				F97F4EF71B7B94510087AA5E /* ThirdController.swift */,
 				F94D59AD1B791D90000DCF99 /* SecondController.swift */,
 				F992A66D1B6FDE06002FA59C /* InterfaceController.swift */,
@@ -546,6 +549,7 @@
 				F992A6721B6FDE06002FA59C /* NotificationController.swift in Sources */,
 				F97F4EF81B7B94510087AA5E /* ThirdController.swift in Sources */,
 				F9E308EB1B7BC0B2005A979E /* Trial.swift in Sources */,
+				F9E308ED1B7BEDBB005A979E /* MeterController.swift in Sources */,
 				F992A6701B6FDE06002FA59C /* ExtensionDelegate.swift in Sources */,
 				F992A6761B6FDE06002FA59C /* ComplicationController.swift in Sources */,
 				F94D59AE1B791D90000DCF99 /* SecondController.swift in Sources */,

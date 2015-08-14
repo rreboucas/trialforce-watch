@@ -9,17 +9,20 @@
 import UIKit
 import CoreData
 import WatchKit
+import WatchConnectivity
 
 
 let RemoteAccessConsumerKey = "3MVG9SemV5D80oBe_O4cXHa0F85ctJlhkGNgZ391bE83Mq_te1MRcH.EviORrHIGlOQw48YscpsQPEgs.AAF9";
 let OAuthRedirectURI = "testsfdc://oauth/success";
 let scopes = ["api"];
 let templtHelper: TrialTemplateHelper = TrialTemplateHelper()
+var watchData = [String: AnyObject]()
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
+
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -115,6 +118,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC = RootViewController(nibName: nil, bundle: nil)
         let navVC = UINavigationController(rootViewController: rootVC)
         self.window!.rootViewController = navVC
+    }
+    
+    func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
+        print("received AppContext from watch")
     }
 
 

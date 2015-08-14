@@ -18,6 +18,61 @@ class ThirdInterfaceController:  WKInterfaceController {
     var trialReceived:Trial?
     @IBOutlet var Contact_Picker: WKInterfacePicker!
     
+    override func contextForSegueWithIdentifier(segueIdentifier: String) ->
+        AnyObject? {
+            
+            var partipant = attendeesList[selectedParticipantIndex]
+            var fullName = partipant.name
+            var nameArray = split(fullName!.characters, maxSplit: Int.max, allowEmptySlices: false, isSeparator: { $0 == " " })
+                .map ( { String($0) } )
+            
+            if nameArray.count > 1{
+                trialReceived?.firstName = nameArray[0]
+                trialReceived?.lastName = nameArray[1]
+            }
+            else{
+                trialReceived?.firstName = partipant.name
+                trialReceived?.lastName = "Test"
+            }
+            trialReceived?.countryCode = "US"
+            
+            var email = partipant.URL.resourceSpecifier
+            trialReceived?.email = email
+            trialReceived?.userName = email + "\(NSDate().timeIntervalSince1970 * 10)"
+            
+            var companyArray = split(email.characters, maxSplit: Int.max, allowEmptySlices: false, isSeparator: { $0 == "@" })
+                .map ( { String($0) } )
+            
+            if companyArray.count > 1{
+                var domainArray = split(companyArray[1].characters, maxSplit: Int.max, allowEmptySlices: false, isSeparator: { $0 == "." })
+                    .map ( { String($0) } )
+                if domainArray.count > 1{
+                    trialReceived?.companyName = domainArray[0]
+                }
+                else {
+                    trialReceived?.companyName = nameArray[1]
+                }
+                
+            }
+            else{
+                trialReceived?.companyName = "Test"
+            }
+            
+            
+            //
+
+            
+            
+            if segueIdentifier == "hierarchical" {
+                return trialReceived
+                //return eventAttendees
+            }
+            else {
+                return ["segue": "", "data": ""]
+            }
+    }
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         
         super.awakeWithContext(context)
@@ -40,49 +95,7 @@ class ThirdInterfaceController:  WKInterfaceController {
         self.Contact_Picker.setItems(pickerItems)
         
     }
-    @IBAction func Btn_Create_Trial() {
-        
-        var partipant = attendeesList[selectedParticipantIndex]
-        var fullName = partipant.name
-        var nameArray = split(fullName!.characters, maxSplit: Int.max, allowEmptySlices: false, isSeparator: { $0 == " " })
-            .map ( { String($0) } )
-        
-        if nameArray.count > 1{
-            trialReceived?.firstName = nameArray[0]
-            trialReceived?.lastName = nameArray[1]
-        }
-        else{
-            trialReceived?.firstName = partipant.name
-            trialReceived?.lastName = "Test"
-        }
-        trialReceived?.countryCode = "US"
-        
-        var email = partipant.URL.resourceSpecifier
-        trialReceived?.email = email
-        trialReceived?.userName = email + "\(NSDate().timeIntervalSince1970 * 10)"
-        
-        var companyArray = split(email.characters, maxSplit: Int.max, allowEmptySlices: false, isSeparator: { $0 == "@" })
-            .map ( { String($0) } )
-        
-        if companyArray.count > 1{
-            var domainArray = split(companyArray[1].characters, maxSplit: Int.max, allowEmptySlices: false, isSeparator: { $0 == "." })
-                .map ( { String($0) } )
-                if domainArray.count > 1{
-                    trialReceived?.companyName = domainArray[0]
-                }
-                else {
-                    trialReceived?.companyName = nameArray[1]
-            }
-            
-        }
-        else{
-            trialReceived?.companyName = "Test"
-        }
 
-        
-        //
-        
-    }
 
     @IBAction func Picker_Tapped(value: Int) {
         print("Printer tapped")

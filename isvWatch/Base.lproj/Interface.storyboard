@@ -67,7 +67,7 @@
                         <label alignment="center" text="Pick a Contact:" textAlignment="left" id="cyU-tV-dhW"/>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Create Trial" id="l3O-j7-Kyp">
                             <connections>
-                                <action selector="Btn_Create_Trial" destination="Bhq-Zo-tmv" id="RH5-ph-lIP"/>
+                                <segue destination="mSO-Xh-VBp" kind="push" identifier="hierarchical" id="wkH-L6-elv"/>
                             </connections>
                         </button>
                         <picker width="1" height="83" alignment="center" verticalAlignment="center" id="SrK-CE-GDP">
@@ -82,6 +82,25 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="634" y="347"/>
+        </scene>
+        <!--Meter Controller-->
+        <scene sceneID="ipu-Yu-R6T">
+            <objects>
+                <controller hidesWhenLoading="NO" id="mSO-Xh-VBp" customClass="MeterController" customModule="isvWatch_Extension">
+                    <items>
+                        <button width="100" alignment="center" verticalAlignment="bottom" title="Done" id="4J8-Vd-FoF">
+                            <connections>
+                                <action selector="Btn_Create_Trial" destination="Bhq-Zo-tmv" id="Pwc-Fe-JA1"/>
+                            </connections>
+                        </button>
+                        <imageView width="135" height="105" alignment="left" id="q2X-gf-mSn"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="q2X-gf-mSn" id="oz4-Qo-maF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="621" y="643"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
