@@ -8,11 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		E70BF245106BAE8474CF6EB7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4533ABB94211891BE6B05C2E /* libPods.a */; };
+		F906B1871B7E159B0062D87B /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B1861B7E159B0062D87B /* calendar.png */; };
+		F906B1881B7E159B0062D87B /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B1861B7E159B0062D87B /* calendar.png */; };
+		F906B18A1B7E1BF30062D87B /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B1891B7E1BF30062D87B /* contact.png */; };
+		F906B18B1B7E1BF30062D87B /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B1891B7E1BF30062D87B /* contact.png */; };
+		F906B18D1B7E1CB40062D87B /* contact2.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B18C1B7E1CB40062D87B /* contact2.png */; };
+		F906B18E1B7E1CB40062D87B /* contact2.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B18C1B7E1CB40062D87B /* contact2.png */; };
+		F906B1901B7E1ED90062D87B /* contact3.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B18F1B7E1ED90062D87B /* contact3.png */; };
+		F906B1911B7E1ED90062D87B /* contact3.png in Resources */ = {isa = PBXBuildFile; fileRef = F906B18F1B7E1ED90062D87B /* contact3.png */; };
 		F90A036B1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
 		F90A036C1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
 		F90A036D1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
 		F90A036E1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
 		F90A036F1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */; };
+		F91D7CA81B7E35F3004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A6771B6FDE06002FA59C /* Assets.xcassets */; };
+		F91D7CA91B7E35F4004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A6771B6FDE06002FA59C /* Assets.xcassets */; };
+		F91D7CAA1B7E35F4004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A6771B6FDE06002FA59C /* Assets.xcassets */; };
+		F91D7CAB1B7E35F5004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A6771B6FDE06002FA59C /* Assets.xcassets */; };
+		F91D7CAC1B7E365D004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A65F1B6FDE05002FA59C /* Assets.xcassets */; };
+		F91D7CAD1B7E365D004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A65F1B6FDE05002FA59C /* Assets.xcassets */; };
+		F91D7CAE1B7E365E004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A65F1B6FDE05002FA59C /* Assets.xcassets */; };
+		F91D7CAF1B7E365E004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F992A65F1B6FDE05002FA59C /* Assets.xcassets */; };
+		F91D7CB01B7E366A004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3D1B6FAC8600A76574 /* Assets.xcassets */; };
+		F91D7CB11B7E366A004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3D1B6FAC8600A76574 /* Assets.xcassets */; };
+		F91D7CB21B7E366B004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3D1B6FAC8600A76574 /* Assets.xcassets */; };
+		F91D7CB31B7E366B004C2F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3D1B6FAC8600A76574 /* Assets.xcassets */; };
 		F937BC371B6FAC8600A76574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC361B6FAC8600A76574 /* AppDelegate.swift */; };
 		F937BC391B6FAC8600A76574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC381B6FAC8600A76574 /* ViewController.swift */; };
 		F937BC3C1B6FAC8600A76574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3A1B6FAC8600A76574 /* Main.storyboard */; };
@@ -98,6 +118,10 @@
 		312D9C0BFA40DDCB1471C465 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4533ABB94211891BE6B05C2E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDEC9D36F08A85A41C55B73 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F906B1861B7E159B0062D87B /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = ../../../WatchAppPics/calendar.png; sourceTree = "<group>"; };
+		F906B1891B7E1BF30062D87B /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact.png; path = ../../../WatchAppPics/contact.png; sourceTree = "<group>"; };
+		F906B18C1B7E1CB40062D87B /* contact2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact2.png; path = ../../../WatchAppPics/contact2.png; sourceTree = "<group>"; };
+		F906B18F1B7E1ED90062D87B /* contact3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact3.png; path = ../../../WatchAppPics/contact3.png; sourceTree = "<group>"; };
 		F90A036A1B6FEF7700251B77 /* OfficeSpaceLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OfficeSpaceLogo.png; path = ../../OfficeSpaceLogo.png; sourceTree = "<group>"; };
 		F937BC331B6FAC8600A76574 /* TrialForceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrialForceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937BC361B6FAC8600A76574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +277,10 @@
 		F992A66A1B6FDE06002FA59C /* isvWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F906B1891B7E1BF30062D87B /* contact.png */,
+				F906B18C1B7E1CB40062D87B /* contact2.png */,
+				F906B18F1B7E1ED90062D87B /* contact3.png */,
+				F906B1861B7E159B0062D87B /* calendar.png */,
 				F9E308EA1B7BC0B2005A979E /* Trial.swift */,
 				F9E308EC1B7BEDBB005A979E /* MeterController.swift */,
 				F97F4EF71B7B94510087AA5E /* ThirdController.swift */,
@@ -441,6 +469,8 @@
 				F937BC3E1B6FAC8600A76574 /* Assets.xcassets in Resources */,
 				F937BC3C1B6FAC8600A76574 /* Main.storyboard in Resources */,
 				F90A036B1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
+				F91D7CAC1B7E365D004C2F8C /* Assets.xcassets in Resources */,
+				F91D7CAB1B7E35F5004C2F8C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +478,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91D7CAA1B7E35F4004C2F8C /* Assets.xcassets in Resources */,
+				F91D7CAD1B7E365D004C2F8C /* Assets.xcassets in Resources */,
+				F91D7CB01B7E366A004C2F8C /* Assets.xcassets in Resources */,
 				F90A036C1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +489,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91D7CA91B7E35F4004C2F8C /* Assets.xcassets in Resources */,
+				F91D7CAE1B7E365E004C2F8C /* Assets.xcassets in Resources */,
+				F91D7CB11B7E366A004C2F8C /* Assets.xcassets in Resources */,
 				F90A036D1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +501,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F992A6601B6FDE05002FA59C /* Assets.xcassets in Resources */,
+				F906B18A1B7E1BF30062D87B /* contact.png in Resources */,
+				F906B1871B7E159B0062D87B /* calendar.png in Resources */,
+				F906B18D1B7E1CB40062D87B /* contact2.png in Resources */,
+				F906B1901B7E1ED90062D87B /* contact3.png in Resources */,
 				F90A036E1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
+				F91D7CA81B7E35F3004C2F8C /* Assets.xcassets in Resources */,
+				F91D7CB21B7E366B004C2F8C /* Assets.xcassets in Resources */,
 				F992A65E1B6FDE05002FA59C /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,8 +516,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F906B1911B7E1ED90062D87B /* contact3.png in Resources */,
 				F992A6781B6FDE06002FA59C /* Assets.xcassets in Resources */,
+				F906B1881B7E159B0062D87B /* calendar.png in Resources */,
+				F906B18B1B7E1BF30062D87B /* contact.png in Resources */,
+				F91D7CAF1B7E365E004C2F8C /* Assets.xcassets in Resources */,
 				F90A036F1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
+				F91D7CB31B7E366B004C2F8C /* Assets.xcassets in Resources */,
+				F906B18E1B7E1CB40062D87B /* contact2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

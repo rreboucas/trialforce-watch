@@ -20,7 +20,7 @@
                                 <segue destination="SlV-u6-TG8" kind="push" identifier="hierarchical" id="X1R-Yc-uX0"/>
                             </connections>
                         </button>
-                        <picker width="1" height="83" alignment="center" verticalAlignment="center" id="lor-v1-QKR">
+                        <picker width="1" height="83" alignment="center" verticalAlignment="center" style="stack" id="lor-v1-QKR">
                             <connections>
                                 <action selector="Picker_Tapped:" destination="AgC-eL-Hgc" id="gaf-ch-uHI"/>
                             </connections>
@@ -90,7 +90,7 @@
                     <items>
                         <button width="100" alignment="center" verticalAlignment="bottom" title="Done" id="4J8-Vd-FoF">
                             <connections>
-                                <action selector="Btn_Create_Trial" destination="Bhq-Zo-tmv" id="Pwc-Fe-JA1"/>
+                                <action selector="btn_Done_Click" destination="mSO-Xh-VBp" id="eoI-zF-rCq"/>
                             </connections>
                         </button>
                         <imageView width="135" height="105" alignment="left" id="q2X-gf-mSn"/>

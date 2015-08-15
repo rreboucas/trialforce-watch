@@ -92,10 +92,14 @@ class SecondInterfaceController:  WKInterfaceController {
                 var evTitle = event.title
                 var evStartDate = event.startDate
                 var participants = event.attendees
-                
-                
+                var img = UIImage(contentsOfFile: "/Users/rreboucas/Documents/WatchAppPics/calendar.png")
+                var imgWk = WKImage(image: img!)
+                let imageName = "calendar.png"
+                //let imgUi = UIImage(named: imageName)
+                //var imgWk = WKImage(image: imgUi!)
                 let item = WKPickerItem()
                 item.title = event.title as! String
+                item.accessoryImage = imgWk
                 pickerItems.append(item)
                 
                 eventsList.append(event)

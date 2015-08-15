@@ -87,6 +87,9 @@ class ThirdInterfaceController:  WKInterfaceController {
             
             let item = WKPickerItem()
             item.title = eventAttendee.name
+            var img = UIImage(contentsOfFile: "/Users/rreboucas/Documents/WatchAppPics/contact3.png")
+            var imgWk = WKImage(image: img!)
+            item.accessoryImage = imgWk
             pickerItems.append(item)
 
             

@@ -22,6 +22,9 @@ class MeterController:  WKInterfaceController, WCSessionDelegate {
         
         super.awakeWithContext(context)
         
+        
+        
+        
         trialReceived = context as! Trial?
         
         print("MeterController - checking if Iphone is paired")
@@ -58,6 +61,9 @@ class MeterController:  WKInterfaceController, WCSessionDelegate {
         
     }
     
+    @IBAction func btn_Done_Click() {
+        exit(0)
+    }
     override func willActivate() {
         super.willActivate()
         
