@@ -20,6 +20,7 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
     var phData: AnyObject?
     var dicts:NSArray = []
     var selectedTemplateIndex:Int = 0
+    var receivedDictionary = [String : AnyObject]()
     
     // comment
     //new
@@ -85,20 +86,55 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
                 let objct = phData as! NSDictionary
                 loadPickerData(objct)
                 
-                /*
-                dicts = objct["results"] as!NSArray
-                var pickerItems: [WKPickerItem] = []
-                for dict in dicts {
-                    var imgbyte = dict["lc_trialforce__Template_Logo__c"] as! String
-                    var imgCru = NSData(base64Encoding: imgbyte)
-                    var imgeWK = WKImage(imageData: imgCru!);
-                    let item = WKPickerItem()
-                    item.contentImage = imgeWK
-                    pickerItems.append(item)
-                }
-                self.trialPicker.setItems(pickerItems)
-                */
             }
+            /*else {
+                if applicationData == nil{
+                    // send message to ios app to receive list of templates
+                    if (WCSession.isSupported()) {
+                        let session = WCSession.defaultSession()
+                        session.delegate = self
+                        session.activateSession()
+                        
+                        if WCSession.defaultSession().reachable == true {
+                            
+                            let requestValues = ["command" : "sendmetrialtemplates"]
+                            let session = WCSession.defaultSession()
+                            
+                            
+                            session.sendMessage(requestValues, replyHandler: { reply in
+                                //handle iphone response here
+                                if(reply["results"] != nil) {
+                                    self.receivedDictionary = reply
+                                    
+                                }
+                                
+                                }, errorHandler: {(error ) -> Void in
+                                    // catch any errors here
+                            })
+                            
+                            if receivedDictionary.count > 0 {
+                                let receivedNSData:NSData = (receivedDictionary["results"] as? NSData)!
+                                
+                                // Save NSData to NSUserDefaults local storage
+                                let defaults = NSUserDefaults.standardUserDefaults()
+                                defaults.setObject(receivedNSData, forKey: "trialTemplates")
+                                
+                                // Unarchive NSData
+                                phData = NSKeyedUnarchiver.unarchiveObjectWithData(receivedNSData) as AnyObject?
+                                print("phData =  \(phData)")
+                                let objct = phData as! NSDictionary
+                                loadPickerData(objct)
+                            }
+                            
+                            
+                            
+                        }
+                        
+                        
+                    }
+                }
+            }*/
+            
 
     }
         }

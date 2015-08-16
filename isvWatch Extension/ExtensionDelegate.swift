@@ -36,6 +36,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         
         print("Extension Delegate: didReceiveApplicationContext =  \(applicationContext)")
         iphoneData = applicationContext
+        
+        let receivedNSData:NSData = (applicationContext["results"] as? NSData)!
+        
+        // Save NSData to NSUserDefaults local storage
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(receivedNSData, forKey: "trialTemplates")
+        
+        // Unarchive NSData
+        var phData = NSKeyedUnarchiver.unarchiveObjectWithData(receivedNSData) as AnyObject?
+        print("extension delegate - phData =  \(phData)")
+
     }
 
 }
