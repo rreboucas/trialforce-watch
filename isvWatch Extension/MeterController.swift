@@ -37,6 +37,7 @@ class MeterController:  WKInterfaceController, WCSessionDelegate {
             
             do {
                 var trDictionary = [String: AnyObject]()
+                trDictionary["appName"] = trialReceived?.templateName
                 trDictionary["fName"] = trialReceived?.firstName
                 trDictionary["lName"] = trialReceived?.lastName
                 trDictionary["cName"] = trialReceived?.companyName

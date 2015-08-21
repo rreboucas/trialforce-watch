@@ -27,8 +27,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+
+        
         SalesforceSDKManager.sharedManager().launch()
         return true
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData!) {
+        print("Got token data! \(deviceToken)")
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError!) {
+        print("Couldn't register: \(error)")
+    }
+    
+    func application(application: UIApplication!, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings!) {
+        // inspect notificationSettings to see what the user said!
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -122,6 +137,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]) {
         print("received AppContext from watch")
+        
+        var appName = applicationContext["appName"] as! String
+        var firstName = applicationContext["fName"] as! String
+        var lastName = applicationContext["lName"] as! String
+        var companyName = applicationContext["cName"] as! String
+        var templateID = applicationContext["templateId"] as! String
+        var countryCode = applicationContext["countryCode"] as! String
+        var cbURL = applicationContext["cbURL"] as! String?
+        var subdomain = applicationContext["subDomain"] as! String?
+        var username = applicationContext["userName"] as! String
+        var email = applicationContext["email"] as! String
+        var consumKey = applicationContext["consKey"] as! String?
+        var emailSupressed = applicationContext["mSupressed"] as! Bool?
+        
+        
+        templtHelper.createSignupRequests(appName, firstName: firstName, lastName: lastName, companyName: companyName, templateID: templateID, countryCode: countryCode, cbURL: cbURL, subdomain: subdomain, username: username, email: email, consumKey: consumKey, emailSupressed: emailSupressed)
+        
+        var notifBody = "\"\(appName)\" Trial requested for \"\(email)\""
+        
+        
+        templtHelper.createLocalIOSNotification(notifBody, fireDate: NSDate(timeIntervalSinceNow: 7))
     }
 
 

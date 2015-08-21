@@ -12,6 +12,8 @@ import WatchConnectivity
 class TrialTemplateHelper: NSObject, WCSessionDelegate, SFRestDelegate {
     
     var session: WCSession!
+    var recordId: String?
+    var appName: String?
     
     func register() {
         
@@ -35,6 +37,111 @@ class TrialTemplateHelper: NSObject, WCSessionDelegate, SFRestDelegate {
         
         
         }
+    
+    func createSignupRequests (appName:String, firstName: String, lastName: String, companyName:String, templateID:String, countryCode:String, cbURL:String?, subdomain:String?, username:String, email:String, consumKey:String?, emailSupressed:Bool?)-> Void {
+        
+        print("createSignupRequests main function")
+        
+        var objApiName: String! = "SignupRequest"
+        var fieldsDict = [NSObject: AnyObject]()
+        self.appName = appName
+        
+        
+        //var fNameObj:NSObject = "FirstName"
+        
+        fieldsDict["FirstName"] = firstName
+        fieldsDict["LastName"] = lastName
+        fieldsDict["Company"] = companyName
+        fieldsDict["TemplateId"] = templateID
+        fieldsDict["Country"] = countryCode
+        fieldsDict["ConnectedAppCallbackUrl"] = cbURL
+        fieldsDict["Subdomain"] = subdomain
+        fieldsDict["Username"] = username
+        fieldsDict["SignupEmail"] = email
+        fieldsDict["ConnectedAppConsumerKey"] = consumKey
+        fieldsDict["IsSignupEmailSuppressed"] = emailSupressed
+        
+        
+        var sharedInstance = SFRestAPI.sharedInstance()
+        var request = sharedInstance.requestForCreateWithObjectType(objApiName, fields: fieldsDict)
+        
+        sharedInstance.send(request, delegate: self)
+        
+        
+        
+        
+    }
+    
+    func request(request: SFRestRequest?, didLoadResponse jsonResponse: AnyObject) {
+        
+        var records = jsonResponse.objectForKey("records") as! NSArray?
+        if records == nil{  // this is a record insert id
+            recordId = jsonResponse.objectForKey("id") as! String?
+            getTrialCreationStatus(recordId!)
+        }
+        else {
+            
+            // this is a return from a query
+            var obj : AnyObject! =  records!.objectAtIndex(0)
+            var status = obj.objectForKey("Status") as! String
+            if status == "Success" {
+                var orgId = obj.objectForKey("CreatedOrgId") as! String
+                var orgInstance = obj.objectForKey("CreatedOrgInstance") as! String
+                
+                var trialDays = obj.objectForKey("TrialDays") as! Int
+                var userName = obj.objectForKey("Username") as! String
+                var email = obj.objectForKey("SignupEmail") as! String
+                
+                var notifBody = "\(appName) Trial created for \(email) - Username: \(userName) - OrgId: \(orgId) - Instance: \(orgInstance)"
+                templtHelper.createLocalIOSNotification(notifBody, fireDate: NSDate(timeIntervalSinceNow: 7))
+                
+            }
+            else{
+                getTrialCreationStatus(recordId!)
+            }
+        }
+        
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+    
+    func getTrialCreationStatus(recordId: String) -> Void {
+        
+        delay(20.0) {
+            var sharedInstance = SFRestAPI.sharedInstance()
+            
+            
+            var request = sharedInstance.requestForQuery("SELECT CreatedOrgId,CreatedOrgInstance,ErrorCode,Status,TrialDays,TrialSourceOrgId,Username,SignupEmail FROM SignupRequest where id = \'\(recordId)\'")
+            
+            
+            
+            sharedInstance.send(request, delegate: self)
+        }
+        
+        
+    }
+    
+    func createLocalIOSNotification (body: String, fireDate: NSDate) -> Void {
+        
+        // create a corresponding local notification
+        var notification = UILocalNotification()
+        notification.alertBody = body// text that will be displayed in the notification
+        notification.alertAction = "open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
+        notification.fireDate = fireDate // todo item due date (when notification will be fired)
+        notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+        notification.category = "TODO_CATEGORY"
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+
+        
+    }
+    
     
     func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
         print("heard a request")
@@ -69,21 +176,7 @@ class TrialTemplateHelper: NSObject, WCSessionDelegate, SFRestDelegate {
             }
         }
         
-/*var replyHandler: [String : AnyObject]
-replyHandler = ["": ""]
 
-sharedInstance.performSOQLQuery(query, failBlock: { error in
-replyHandler = ["error": error]
-}) { response in  //success
-print("sending successful response")
-replyHandler = ["success": response]
-}
-
-
-
-return replyHandler
-
-*/
 
 
 

@@ -22,6 +22,7 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
     var selectedTemplateIndex:Int = 0
     var receivedDictionary = [String : AnyObject]()
     
+    @IBOutlet var label_Pick_Template: WKInterfaceLabel!
     // comment
     //new
 
@@ -87,6 +88,10 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
                 loadPickerData(objct)
                 
             }
+            else {
+                label_Pick_Template.setText("Login to your Business Org using your Iphone app to see Templates")
+            }
+            
             /*else {
                 if applicationData == nil{
                     // send message to ios app to receive list of templates
@@ -207,7 +212,7 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
     
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]){
         
-        
+        label_Pick_Template.setText("Pick a Template:")
         print("Controller didReceiveApplicationContext =  \(applicationContext)")
         let receivedNSData:NSData = (applicationContext["results"] as? NSData)!
         

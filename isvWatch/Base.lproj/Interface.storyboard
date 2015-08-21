@@ -28,6 +28,7 @@
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
+                        <outlet property="label_Pick_Template" destination="pkc-WW-bMW" id="Luf-FL-ont"/>
                         <outlet property="trialPicker" destination="lor-v1-QKR" id="q3H-hK-gXQ"/>
                     </connections>
                 </controller>
@@ -64,12 +65,12 @@
             <objects>
                 <controller hidesWhenLoading="NO" id="Bhq-Zo-tmv" customClass="ThirdInterfaceController" customModule="isvWatch_Extension">
                     <items>
-                        <label alignment="center" text="Pick a Contact:" textAlignment="left" id="cyU-tV-dhW"/>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Create Trial" id="l3O-j7-Kyp">
                             <connections>
                                 <segue destination="mSO-Xh-VBp" kind="push" identifier="hierarchical" id="wkH-L6-elv"/>
                             </connections>
                         </button>
+                        <label alignment="center" text="Pick a Contact:" textAlignment="left" id="cyU-tV-dhW"/>
                         <picker width="1" height="83" alignment="center" verticalAlignment="center" id="SrK-CE-GDP">
                             <connections>
                                 <action selector="Picker_Tapped:" destination="Bhq-Zo-tmv" id="Nxp-Tp-85E"/>
@@ -134,7 +135,14 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="isvWatch" customModuleProvider="target"/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="isvWatch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="75" alignment="left" text="Label" numberOfLines="4" id="Nqa-aF-as2"/>
+                    </items>
+                    <connections>
+                        <outlet property="Label_Trial_Created" destination="Nqa-aF-as2" id="sm0-8U-U5j"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>

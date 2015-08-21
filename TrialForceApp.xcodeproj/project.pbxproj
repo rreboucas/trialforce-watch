@@ -40,6 +40,7 @@
 		F937BC411B6FAC8600A76574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F937BC3F1B6FAC8600A76574 /* LaunchScreen.storyboard */; };
 		F937BC4C1B6FAC8700A76574 /* TrialForceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC4B1B6FAC8700A76574 /* TrialForceAppTests.swift */; };
 		F937BC571B6FAC8700A76574 /* TrialForceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937BC561B6FAC8700A76574 /* TrialForceAppUITests.swift */; };
+		F9417E9C1B834E5200F64310 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9417E9B1B834E5200F64310 /* Icon.png */; };
 		F94D59AE1B791D90000DCF99 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D59AD1B791D90000DCF99 /* SecondController.swift */; };
 		F97F4EF81B7B94510087AA5E /* ThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F4EF71B7B94510087AA5E /* ThirdController.swift */; };
 		F992A65E1B6FDE05002FA59C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F992A65C1B6FDE05002FA59C /* Interface.storyboard */; };
@@ -136,6 +137,7 @@
 		F937BC521B6FAC8700A76574 /* TrialForceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrialForceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937BC561B6FAC8700A76574 /* TrialForceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialForceAppUITests.swift; sourceTree = "<group>"; };
 		F937BC581B6FAC8700A76574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9417E9B1B834E5200F64310 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../../WatchAppPics/Icon.png; sourceTree = "<group>"; };
 		F94D59AA1B78D950000DCF99 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
 		F94D59AC1B791D8F000DCF99 /* isvWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "isvWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		F94D59AD1B791D90000DCF99 /* SecondController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondController.swift; path = ../isvWatch/SecondController.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 		F937BC351B6FAC8600A76574 /* TrialForceApp */ = {
 			isa = PBXGroup;
 			children = (
+				F9417E9B1B834E5200F64310 /* Icon.png */,
 				F9E5C94F1B6FB46500B24ACF /* TrialForceApp-BridgingHeader.h */,
 				F937BC361B6FAC8600A76574 /* AppDelegate.swift */,
 				F937BC381B6FAC8600A76574 /* ViewController.swift */,
@@ -470,6 +473,7 @@
 				F937BC3C1B6FAC8600A76574 /* Main.storyboard in Resources */,
 				F90A036B1B6FEF7700251B77 /* OfficeSpaceLogo.png in Resources */,
 				F91D7CAC1B7E365D004C2F8C /* Assets.xcassets in Resources */,
+				F9417E9C1B834E5200F64310 /* Icon.png in Resources */,
 				F91D7CAB1B7E35F5004C2F8C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
