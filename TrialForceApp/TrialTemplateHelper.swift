@@ -87,12 +87,13 @@ class TrialTemplateHelper: NSObject, WCSessionDelegate, SFRestDelegate {
             if status == "Success" {
                 var orgId = obj.objectForKey("CreatedOrgId") as! String
                 var orgInstance = obj.objectForKey("CreatedOrgInstance") as! String
+                var application = appName as String?
                 
                 var trialDays = obj.objectForKey("TrialDays") as! Int
                 var userName = obj.objectForKey("Username") as! String
                 var email = obj.objectForKey("SignupEmail") as! String
                 
-                var notifBody = "\(appName) Trial created for \(email) - Username: \(userName) - OrgId: \(orgId) - Instance: \(orgInstance)"
+                var notifBody = "\(application) Trial created for \(email) - Username: \(userName) - OrgId: \(orgId) - Instance: \(orgInstance)"
                 templtHelper.createLocalIOSNotification(notifBody, fireDate: NSDate(timeIntervalSinceNow: 7))
                 
             }

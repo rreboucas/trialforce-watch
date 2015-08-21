@@ -39,7 +39,7 @@ class NotificationController: WKUserNotificationInterfaceController {
         // After populating your dynamic notification interface call the completion block.
         
         
-        self.Label_Trial_Created?.setText(localNotification.alertTitle)
+        self.Label_Trial_Created?.setText(localNotification.alertBody)
         
         completionHandler(.Custom)
     }

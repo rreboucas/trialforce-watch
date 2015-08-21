@@ -22,7 +22,8 @@ class MeterController:  WKInterfaceController, WCSessionDelegate {
         
         super.awakeWithContext(context)
         
-        
+        self.imageView.setImageNamed("Steps-")
+        self.imageView.startAnimatingWithImagesInRange(NSMakeRange(0, 101), duration: 1, repeatCount: 1)
         
         
         trialReceived = context as! Trial?
@@ -68,8 +69,7 @@ class MeterController:  WKInterfaceController, WCSessionDelegate {
     override func willActivate() {
         super.willActivate()
         
-        imageView.setImageNamed("Steps-")
-        imageView.startAnimating()
+        
 
         
     }

@@ -94,7 +94,7 @@
                                 <action selector="btn_Done_Click" destination="mSO-Xh-VBp" id="eoI-zF-rCq"/>
                             </connections>
                         </button>
-                        <imageView width="135" height="105" alignment="left" id="q2X-gf-mSn"/>
+                        <imageView width="115" height="105" alignment="center" id="q2X-gf-mSn"/>
                     </items>
                     <connections>
                         <outlet property="imageView" destination="q2X-gf-mSn" id="oz4-Qo-maF"/>
@@ -121,7 +121,7 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                        <label height="78" alignment="left" text="Alert Label" numberOfLines="6" id="XkS-y5-khE"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
@@ -137,7 +137,7 @@
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="isvWatch" customModuleProvider="target">
                     <items>
-                        <label width="136" height="75" alignment="left" text="Label" numberOfLines="4" id="Nqa-aF-as2"/>
+                        <label width="136" height="75" alignment="left" text="Label" numberOfLines="5" id="Nqa-aF-as2"/>
                     </items>
                     <connections>
                         <outlet property="Label_Trial_Created" destination="Nqa-aF-as2" id="sm0-8U-U5j"/>
