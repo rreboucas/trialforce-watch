@@ -22,7 +22,9 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
     var selectedTemplateIndex:Int = 0
     var receivedDictionary = [String : AnyObject]()
     
+    @IBOutlet var label_Login_First: WKInterfaceLabel!
     @IBOutlet var label_Pick_Template: WKInterfaceLabel!
+    @IBOutlet var btn_Next: WKInterfaceButton!
     // comment
     //new
 
@@ -82,6 +84,7 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
             if let savedTemplates = defaults.dataForKey("trialTemplates")
             {
                 // Unarchive NSData
+                
                 phData = NSKeyedUnarchiver.unarchiveObjectWithData(savedTemplates) as AnyObject?
                 print("phData =  \(phData)")
                 let objct = phData as! NSDictionary
@@ -89,7 +92,10 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
                 
             }
             else {
-                label_Pick_Template.setText("Login to your Business Org using your Iphone app to see Templates")
+                label_Pick_Template.setHidden(true)
+                label_Login_First.setHidden(false)
+                trialPicker.setHidden(false)
+                btn_Next.setHidden(true)
             }
             
             /*else {
@@ -212,6 +218,10 @@ class InterfaceController:  WKInterfaceController, WCSessionDelegate, WKExtensio
     
     func session(session: WCSession, didReceiveApplicationContext applicationContext: [String : AnyObject]){
         
+        label_Pick_Template.setHidden(false)
+        label_Login_First.setHidden(true)
+        trialPicker.setHidden(false)
+        btn_Next.setHidden(false)
         label_Pick_Template.setText("Pick a Template:")
         print("Controller didReceiveApplicationContext =  \(applicationContext)")
         let receivedNSData:NSData = (applicationContext["results"] as? NSData)!

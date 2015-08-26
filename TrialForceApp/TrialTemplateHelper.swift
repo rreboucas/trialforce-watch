@@ -93,7 +93,7 @@ class TrialTemplateHelper: NSObject, WCSessionDelegate, SFRestDelegate {
                 var userName = obj.objectForKey("Username") as! String
                 var email = obj.objectForKey("SignupEmail") as! String
                 
-                var notifBody = "\(application) Trial created for \(email) - Username: \(userName) - OrgId: \(orgId) - Instance: \(orgInstance)"
+                var notifBody = "\(application!) Trial created for \(email) - Username: \(userName) - OrgId: \(orgId) - Instance: \(orgInstance)"
                 templtHelper.createLocalIOSNotification(notifBody, fireDate: NSDate(timeIntervalSinceNow: 7))
                 
             }

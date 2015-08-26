@@ -73,49 +73,61 @@ class SecondInterfaceController:  WKInterfaceController {
         eventStore.requestAccessToEntityType(EKEntityType.Event, completion: {
             granted, error in
             
-            print(error)
-        })
-        
-        var calendars = eventStore.calendarsForEntityType(EKEntityType.Event)
-        
-        var startDate = getFloatingDate(-5)!
-        var endDate = getFloatingDate(5)!
-        
-        
-        var pred = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: calendars)
-        var events = eventStore.eventsMatchingPredicate(pred) as [EKEvent]
-        
-        var pickerItems: [WKPickerItem] = []
-        for event in events {
-            if (event.attendees?.count > 0){
+            if granted{
                 
-                var evTitle = event.title
-                var evStartDate = event.startDate
-                var participants = event.attendees
-                var img = UIImage(contentsOfFile: "/Users/rreboucas/Documents/WatchAppPics/calendar.png")
-                var imgWk = WKImage(image: img!)
-                let imageName = "calendar.png"
-                //let imgUi = UIImage(named: imageName)
-                //var imgWk = WKImage(image: imgUi!)
-                let item = WKPickerItem()
-                item.title = event.title as! String
-                item.accessoryImage = imgWk
-                pickerItems.append(item)
+                var calendars = eventStore.calendarsForEntityType(EKEntityType.Event)
                 
-                eventsList.append(event)
+                var startDate = self.getFloatingDate(-5)!
+                var endDate = self.getFloatingDate(5)!
+                
+                
+                var pred = eventStore.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: calendars)
+                var events = eventStore.eventsMatchingPredicate(pred) as [EKEvent]
+                
+                var pickerItems: [WKPickerItem] = []
+                for event in events {
+                    if (event.attendees?.count > 0){
+                        
+                        var evTitle = event.title
+                        var evStartDate = event.startDate
+                        var participants = event.attendees
+                        //var img = UIImage(contentsOfFile: "/Users/rreboucas/Documents/WatchAppPics/calendar.png")
+                        var img = UIImage(named: "calendar.png")
+                        var imgWk = WKImage(image: img!)
+                        let imageName = "calendar.png"
+                        //let imgUi = UIImage(named: imageName)
+                        //var imgWk = WKImage(image: imgUi!)
+                        let item = WKPickerItem()
+                        item.title = event.title as! String
+                        item.accessoryImage = imgWk
+                        pickerItems.append(item)
+                        
+                        self.eventsList.append(event)
+                        
+                    }
+                    
+                }
+                self.eventPicker.setItems(pickerItems)
+                
+            }
+            else {
+                print ("Access to store not granted")
+                print(error)
                 
             }
             
-        }
-        self.eventPicker.setItems(pickerItems)
+        })
         
+        
+        
+        /*
         for calendar in calendars as [EKCalendar] {
             print("Calendar = \(calendar.title)")
             
             
             //var event = eventStore.eventsMatchingPredicate(<#T##predicate: NSPredicate##NSPredicate#>)
             
-        }
+        } */
         
         
 

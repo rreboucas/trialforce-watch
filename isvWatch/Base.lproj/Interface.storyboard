@@ -20,6 +20,7 @@
                                 <segue destination="SlV-u6-TG8" kind="push" identifier="hierarchical" id="X1R-Yc-uX0"/>
                             </connections>
                         </button>
+                        <label width="136" height="117" alignment="left" hidden="YES" text="Login to your Business Org using your Iphone app to see Templates" numberOfLines="6" id="WGn-iE-X1n"/>
                         <picker width="1" height="83" alignment="center" verticalAlignment="center" style="stack" id="lor-v1-QKR">
                             <connections>
                                 <action selector="Picker_Tapped:" destination="AgC-eL-Hgc" id="gaf-ch-uHI"/>
@@ -28,12 +29,14 @@
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
+                        <outlet property="btn_Next" destination="JKE-fF-cAO" id="PqG-SO-LG9"/>
+                        <outlet property="label_Login_First" destination="WGn-iE-X1n" id="CUU-9P-nq9"/>
                         <outlet property="label_Pick_Template" destination="pkc-WW-bMW" id="Luf-FL-ont"/>
                         <outlet property="trialPicker" destination="lor-v1-QKR" id="q3H-hK-gXQ"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="235" y="395"/>
         </scene>
         <!--Second Interface Controller-->
         <scene sceneID="RvC-aP-Bab">
